@@ -1,0 +1,28 @@
+1) 'CREATE TABLE MOBILES (
+    Prodid varchar(50),Comapny varchar(60),ModelName varchar(100),Price varchar(100),RAM varchar(100),
+    ROM varchar(100),Display varchar(100),RearCamera varchar(50),Color varchar(50),YOL varchar (50) );
+
+1) "insert into MOBILES values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%
+     (Prodid,Company,ModelName,Price,RAM,ROM,Disp,Rer,Cl,Yl,Pr)
+
+2) "select Company,ModelName from MOBILES where ModelName='%s'"%nm 
+
+3)'select * from MOBILES '
+
+4)"select * from MOBILES where Prodid='%s'"%prid
+  "delete from MOBILES where Prodid='%s'"%prid
+
+5)"select Company,ModelName,YOL from MOBILES where Company='%s' order by MOBILES.YOL "%c)
+  "select * from MOBILES where Company='%s' order by MOBILES.YOL "%c 
+
+6)"alter table MOBILES add Purpose varchar(50)"
+
+7)"select * from MOBILES where RAM='%s' and ROM='%s'"%(ra,ro)
+
+8)"select * from MOBILES where ModelName='%s' "%md
+
+9)"select * from MOBILES where Price<='%s'"%p
+
+10)"select * from MOBILES where Company='%s' order by MOBILES.Price asc"%C
+
+11)"update MOBILES set Price='%s' where MOBILES.Prodid='%s'"%(np,prid)
